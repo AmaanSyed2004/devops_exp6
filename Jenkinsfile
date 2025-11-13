@@ -1,6 +1,9 @@
 pipeline {
     agent any
 
+    tools {
+        nodejs "Node18"
+    }
     environment {
         DOCKERHUB_REPO = 'amaaniscool'
         IMAGE_TAG = "${BUILD_NUMBER}" 
