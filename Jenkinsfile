@@ -6,8 +6,10 @@ pipeline {
         dockerTool "docker"
     }
     environment {
-        DOCKERHUB_REPO = 'amaaniscool'
-        IMAGE_TAG = "${BUILD_NUMBER}" 
+    DOCKER_HOME = "C:/Program Files/Docker/Docker"
+    PATH = "${env.PATH};${DOCKER_HOME}/resources/bin"
+    DOCKERHUB_REPO = 'amaaniscool'
+    IMAGE_TAG = "${BUILD_NUMBER}"
     }
 
     stages {
