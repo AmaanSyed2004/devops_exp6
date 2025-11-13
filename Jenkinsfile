@@ -7,7 +7,7 @@ pipeline {
     }
     environment {
     DOCKER_HOME = "C:/Program Files/Docker/Docker"
-    PATH = "${env.PATH};${DOCKER_HOME}/resources/bin"
+    PATH = "${env.PATH};${DOCKER_HOME}/resources/bin;C:/Windows/System32"
     DOCKERHUB_REPO = 'amaaniscool'
     IMAGE_TAG = "${BUILD_NUMBER}"
     }
