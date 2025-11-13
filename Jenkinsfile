@@ -3,6 +3,7 @@ pipeline {
 
     tools {
         nodejs "Node18"
+        dockerTool "docker"
     }
     environment {
         DOCKERHUB_REPO = 'amaaniscool'
